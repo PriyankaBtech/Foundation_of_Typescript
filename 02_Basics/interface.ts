@@ -24,3 +24,22 @@ startTrail: () => {
 getCoupon: (name: "priyankacoupon", off: 10) => {
     return 1010 // no error
 }
+
+// YOU CAN USE INTERFACE MULTIPLE TIMES
+
+interface User {
+    readonly dbId: number,
+    email: string,
+    userId: number,
+}
+
+interface User {
+    githubToken: number,
+}
+
+githubToken: "github"
+
+interface Admin extends User {
+    role: "programmer" | "coder" | "Learner"    
+}
+role: "coders"
